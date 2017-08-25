@@ -23,14 +23,21 @@ class Storage
   public static function getAdList()
   {
     $db =  Db::getConnection();
-    $usersList = array();
+    $adsList = array();
 
-    $result = $db->query("SELECT * FROM users");
+    $result = $db->query("SELECT advertisement.title, users.name FROM advertisement INNER JOIN users ON users.id = advertisement.id_user");
 
+   $i = 0;
     while($row = $result->fetch())
     {
-      $usersList[] = $row['name'];
+      $adsList[$i]['name'] = $row['name'];
+      $adsList[$i]['title'] = $row['title'];
+      $i++;
     }
+
+    return   $adsList;
+
+
   }
 
 

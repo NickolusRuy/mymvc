@@ -49,11 +49,11 @@ echo "Path ".$path ."<br>";
 
 				$segments = explode('/', $internalRoute);
 
-						print_r($internalRoute);
+					//	print_r($internalRoute);
 
-				echo '<pre>';
-				echo print_r($segments);
-				echo '</pre>';
+				//echo '<pre>';
+				//echo print_r($segments);
+				//echo '</pre>';
 
 				$controllerName = array_shift($segments).'Controller';
 				$controllerName = ucfirst($controllerName);

@@ -1,6 +1,7 @@
 <?php
 
-include_once ROOT.'/models/Storage.php';
+include_once ROOT.'/models/User.php';
+include_once ROOT.'/models/Advertisement.php';
 
 class MainController
 {
@@ -12,8 +13,14 @@ class MainController
 
     public function actionUsers()
     {
-      $userList =   Storage::getUserList();
+      $userList =   User::getUserList();;
 
       require_once(ROOT . '/views/main/users.php');
+    }
+
+    public function actionAdvertisement()
+    {
+      $aList = Advertisement::getAdsList();
+        require_once(ROOT . '/views/main/advertisement.php');
     }
 }

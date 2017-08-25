@@ -5,18 +5,22 @@ include(ROOT.'/views/layout.php');
 
 ?>
 
+<div class="container after-nav">
+<div class="row">
+<div class="col-lg-6 col-lg-offset-3">
+    <h2>User  List</h2>
+  <ul class="list-group">
+<?php foreach ($userList as  $value): ?>
 
-<ul class="list-group">
+
   <li class="list-group-item">
-    <span class="badge">14</span>
-    Cras justo odio
+    <?php echo $value ?>
   </li>
-  <li class="list-group-item">
-    <span class="badge">2</span>
-    Dapibus ac facilisis in
-  </li>
-  <li class="list-group-item">
-    <span class="badge">1</span>
-    Morbi leo risus
-  </li>
-</ul>
+
+<?php endforeach; ?>
+
+  </ul>
+
+</div>
+</div>
+</div>

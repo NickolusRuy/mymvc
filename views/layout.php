@@ -34,7 +34,7 @@
 
 					<li><a href="/">Main</a></li>
 					<li><a href="users">Users</a></li>
-					<li><a href="/main/logout">Advertisement</a></li>
+					<li><a href="/advertisement">Advertisement</a></li>
 
 				</ul>
 

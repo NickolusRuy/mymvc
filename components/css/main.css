@@ -2,7 +2,7 @@
 {
   background-image: url(../img/ban.jpg);
   background-size: cover;
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 
@@ -14,4 +14,10 @@
 .navbar
 {
   margin: 0px !important;
+}
+
+
+h2
+{
+  text-align: center;
 }
