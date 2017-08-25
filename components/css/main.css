@@ -1,0 +1,17 @@
+.background-small
+{
+  background-image: url(../img/ban.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.after-nav
+{
+  padding-top: 30px;
+}
+
+.navbar
+{
+  margin: 0px !important;
+}
